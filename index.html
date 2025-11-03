@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的個人首頁 | 吳宥靚</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #e6f0ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffb6c1;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+  }
+
+  .avatar:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+  }
+
+  p.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .links a {
+    display: block;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 30px;
+    margin: 10px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .links a:hover {
+    background: #ffb6c1;
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      padding: 25px;
+    }
+    h1 { font-size: 1.4rem; }
+    .links a { padding: 10px; font-size: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.imgur.com/dM7Thhn.png" alt="avatar" class="avatar">
+    <h1>吳宥靚</h1>
+    <p class="subtitle">美妝 ✦ 時尚 ✦ 高三學生</p>
+
+    <div class="links">
+      <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+      <a href="mailto:youremail@example.com">✉️ Email</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">💼 LinkedIn</a>
+      <a href="https://instagram.com/yourinstagram" target="_blank">📸 Instagram</a>
+    </div>
+
+    <footer>© 2025 by 吳宥靚</footer>
+  </div>
+</body>
+</html>
